@@ -25,3 +25,11 @@ function complete() {
     clearInterval(timer);
     timer = null;
 }
+import {Howl, Howler} from 'howler';
+const {Howl, Howler} = require('howler');
+
+var sound = new Howl({
+    src: ['V IS U AL.ogg']
+  });
+  
+  sound.play();

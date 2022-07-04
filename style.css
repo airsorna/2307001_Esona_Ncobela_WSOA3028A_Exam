@@ -1,5 +1,5 @@
 body {
-    background: url(Images/PicsArt_12-25-11.25.59.jpg) no-repeat center fixed;
+    background: url(PicsArt_12-25-11.25.59.jpg) no-repeat center fixed;
     background-size: cover;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -68,7 +68,7 @@ article {
     margin-right: auto;
 }
 .e-content {
-    background-color: rgba(255, 118, 20, 0.475);
+    background-color: rgba(165, 221, 200, 0.739);
     backdrop-filter: 100%;
     width: 1400px;
     margin-left: auto;
@@ -154,6 +154,55 @@ span.fade {
     opacity: 1;
     transform: translateY(0px);
 }
+
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  border: 2px solid black;
+  position: absolute;
+  left: 50%;
+  bottom: 740px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid black;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.3s;
+  /* animation: scroll-down 1s ease-in-out infinite; */
+}
+
+@keyframes scroll-down {
+  0% {
+    /* top:20%; */
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
 @media (max-width: 800px) {
     .bars {
         display: block;
